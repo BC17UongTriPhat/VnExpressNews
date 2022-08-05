@@ -46,7 +46,7 @@ export default class Thoisu extends Component {
         <div  key={index}>
           <div className="card">
             <img src={thoisu.img} alt="..." />
-            <div className="card-body">
+            <div className="thoisu_content">
               <h3>{thoisu.title}</h3>
               <a href={thoisu.url} >{thoisu.content.length > 120 ? <span>{thoisu.content.slice(0,120)}... <a  href={thoisu.url}>Đọc tiếp</a> </span> :<span>{thoisu.content}</span>}</a>
              <hr />

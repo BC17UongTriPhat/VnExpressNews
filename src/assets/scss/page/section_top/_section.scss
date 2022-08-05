@@ -14,9 +14,11 @@
                 img {
                     width: 100%;
                     padding-left: 15px;
+                    padding-right: 10px;
                 }
             }
             .section_topstory_left_content {
+                padding-left: 10px;
                 background-color: $c1-100;
                 width: 60%;
                 height: 374px;
@@ -52,6 +54,201 @@
             font-size: 14px;
             color: $c1-200;
             text-decoration: none;
+        }
+    }
+}
+@media screen and (max-width:1024px) {
+    .section {
+        padding: 20px 67px;
+        width: 100%;
+        .section_topstory {
+            display: flex;
+            .section_topstory_leftimg {
+               flex-direction: column;
+                width: 100%;
+                .section_topstory_leftimg-left {
+                    img {
+                        width: 100%;
+                        padding-left: 15px;
+                        padding-right: 10px;
+                    }
+                }
+                .section_topstory_left_content {
+                    margin-left: 15px;
+                    margin-right: 15px;
+
+                    padding-left: 10px;
+                    background-color: $c1-100;
+                    width: 100%;
+                    height: 100px;
+                    padding-right: 10px;
+                    margin-right: 10px;
+                    .hide_mobile{
+                        display: none;
+                    }
+                    h3 {
+                        font-size: 20px;
+                        font-weight: $text-Bold;
+                    }
+                    a {
+                        font-size: 14px;
+                        color: $c1-200;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .section_topstory_rightimg {
+                width: 20%;
+               
+                background-image: url('../../../image/Vlasta-Sam-Son_Cam-Tong-the_-Anh-03-resize.jpg');
+                background-size: cover;
+                background-position: right 0;
+                height: 426px;
+                padding-left: 20px;
+            }
+        }
+        .section_bottomstory {
+            margin-top: 10px;
+            h3 {
+                font-size: $text-base;
+                font-weight: $text-Bold;
+            }
+            a {
+                font-size: $text-sm;
+                color: $c1-200;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .section {
+        padding: 20px 67px;
+        width: 100%;
+        .section_topstory {
+            display: flex;
+            .section_topstory_leftimg {
+               flex-direction: column;
+                width: 100%;
+                .section_topstory_leftimg-left {
+                    img {
+                        width: 100%;
+                        padding-left: 15px;
+                        padding-right: 10px;
+                    }
+                }
+                .section_topstory_left_content {
+                    margin-left: 15px;
+                    margin-right: 15px;
+
+                    padding-left: 10px;
+                    background-color: $c1-100;
+                    width: 100%;
+                    height: 100px;
+                    padding-right: 10px;
+                    margin-right: 10px;
+                    .hide_mobile{
+                        display: none;
+                    }
+                    h3 {
+                        font-size: 20px;
+                        font-weight: $text-Bold;
+                    }
+                    a {
+                        font-size: 14px;
+                        color: $c1-200;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .section_topstory_rightimg {
+                width: 20%;
+               
+                background-image: url('../../../image/Vlasta-Sam-Son_Cam-Tong-the_-Anh-03-resize.jpg');
+                background-size: cover;
+                background-position: right 0;
+                height: 426px;
+                padding-left: 20px;
+            }
+        }
+        .section_bottomstory {
+            margin-top: 10px;
+            h3 {
+                font-size: $text-base;
+                font-weight: $text-Bold;
+            }
+            a {
+                font-size: $text-sm;
+                color: $c1-200;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    .section {
+        padding: 20px 67px;
+        width: 100%;
+        .section_topstory {
+            display: flex;
+            .section_topstory_leftimg {
+               flex-direction: column;
+                width: 100%;
+                .section_topstory_leftimg-left {
+                    img {
+                        width: 100%;
+                        padding-left: 15px;
+                        padding-right: 10px;
+                    }
+                }
+                .section_topstory_left_content {
+                    margin-left: 15px;
+                    margin-right: 15px;
+
+                    padding-left: 10px;
+                    background-color: $c1-100;
+                    width: 100%;
+                    height: 100px;
+                    padding-right: 10px;
+                    margin-right: 10px;
+                    .hide_mobile{
+                        display: none;
+                    }
+                    h3 {
+                        font-size: 20px;
+                        font-weight: $text-Bold;
+                    }
+                    a {
+                        font-size: 14px;
+                        color: $c1-200;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .section_topstory_rightimg {
+                width: 20%;
+               
+                background-image: url('../../../image/Vlasta-Sam-Son_Cam-Tong-the_-Anh-03-resize.jpg');
+                background-size: cover;
+                background-position: right 0;
+                height: 426px;
+                padding-left: 20px;
+            }
+        }
+        .section_bottomstory {
+            margin-top: 10px;
+            h3 {
+                font-size: $text-base;
+                font-weight: $text-Bold;
+            }
+            a {
+                font-size: $text-sm;
+                color: $c1-200;
+                text-decoration: none;
+            }
         }
     }
 }

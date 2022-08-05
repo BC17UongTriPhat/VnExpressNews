@@ -1,6 +1,6 @@
 import Home from "./page/home/Home";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import LayoutHeaderFooter from "./LayoutHeaderFooter";
+import LayoutHeaderFooter from "./page/LayoutHeaderFooter";
 
 function App() {
   return (

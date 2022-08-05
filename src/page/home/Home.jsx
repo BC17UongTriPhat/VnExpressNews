@@ -13,19 +13,17 @@ export default function Home() {
           <nav className="navbar navbar-expand-sm navbar-dark">
             <div className="img">
               <a href="/">
-              <img 
-                src="https://s1.vnecdn.net/vnexpress/restruct/i/v630/v2_2019/pc/graphics/logo.svg"
-                alt="vnEpresslogo"
-              />
+                <img className="logo"
+                  src="https://s1.vnecdn.net/vnexpress/restruct/i/v630/v2_2019/pc/graphics/logo.svg"
+                  alt="vnEpresslogo"
+                />
               </a>
-              
             </div>
-
             <div
               className="collapse-top navbar-collapse text-dark"
               id="collapsibleNavId"
             >
-              <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+              <ul className="navbar-nav-top-right mr-auto mt-2 mt-lg-0">
                 <li className="nav-item   ">
                   <a className="nav-link" href="https://vnexpress.net/tin-tuc-24h">
                     Mới nhất
@@ -37,11 +35,11 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
-              <form className="form-inline my-2 my-lg-0">
+              <form className="form-inline my-2 ">
                 <input
-                  className="form-control mr-sm-2"
+                  className="form-control "
                   type="text"
-                  placeholder="Tìm kiếm "
+                  placeholder="Tìm kiếm  "
                 />
                 <button className="btn btn-outline my-2 my-sm-0" type="submit">
                   <i class="fa fa-user"></i>Đăng Nhập
@@ -50,16 +48,10 @@ export default function Home() {
             </div>
           </nav>
           <hr />
-          <nav className="navbar navbar-expand-sm navbar-dark text-dark">
-            <button
-              className="navbar-toggler d-lg-none"
-              type="button"
-              data-toggle="collapse"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            />
+          <nav className="navbar  navbar-expand-sm navbar-dark text-dark">
+
             <div>
-              <ul className="navbar-nav mr-auto mt-2 mt-lg-0 ">
+              <ul className="navbar-nav navbar-bot mr-auto mt-2 mt-lg-0 ">
                 <i class="fa-solid fa-house"></i>
                 <li className="nav-item  text-dark ">
                   <Link className="nav-link" to="/thoisu">
@@ -133,7 +125,9 @@ export default function Home() {
                 </li>
               </ul>
             </div>
+
           </nav>
+          
           <hr />
         </div>
       </header>
@@ -153,9 +147,19 @@ export default function Home() {
                 Văn tại Đài Bắc hôm nay, tuyên bố Mỹ không từ bỏ cam kết với hòn
                 đảo.
               </a>
+              <div className="hide_mobile">
+                <h3 >Bỏ khung giá đất 'sẽ thúc đẩy tiến độ dự án</h3>
+                <a
+                  href="https://vnexpress.net/bo-khung-gia-dat-se-thuc-day-tien-do-du-an-4494723.html"
+                  alt="Bỏ khung giá đất 'sẽ thúc đẩy tiến độ dự án"
+                >
+                  Dự thảo Luật Đất đai sửa đổi đang được cơ quan soạn thảo là Bộ Tài nguyên và Môi trường xin ý kiến nhân dân. Dự luật bỏ quy định khung giá đất, chuyển sang xác định giá đất phù hợp với giá phổ biến trên thị trường... Đọc tiếp
+                </a>
+              </div>
             </div>
+
           </div>
-          <div className="section_topstory_rightimg wow animate__animated animate__fadeInUp"data-wow-duration="2s" data-wow-delay="0.3s">
+          <div className="section_topstory_rightimg wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
             <img
               src="../../assets/image/Vlasta-Sam-Son_Cam-Tong-the_-Anh-03-resize.jpg"
               alt=""
@@ -209,13 +213,13 @@ export default function Home() {
             <Thoisu />
           </div>
           {/* --- thegioi --- */}
-          <div className="thoisu_col col-8">
+          <div className="thegioi_col col-8">
             <div className=" row">
               <div className="col-8 border-right border-left    ">
                 <Thegioi />
               </div>
               <div className="col-4">
-                  <Doisong className='doisong'/>
+                <Doisong className='doisong' />
               </div>
             </div>
           </div>
@@ -229,7 +233,7 @@ export default function Home() {
       </div>
       {/* Footer */}
 
-      
+
     </div>
   );
 }

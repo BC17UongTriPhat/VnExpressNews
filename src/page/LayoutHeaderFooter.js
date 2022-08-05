@@ -1,11 +1,11 @@
 import { Switch, Route } from "react-router-dom";
-import Doisong from "./page/doisong/Doisong";
-import Footer from "./page/footer/Footer"
-import Gocnhin from "./page/gocnhin/Gocnhin";
-import Home from "./page/home/Home"
-import QuocTe from "./page/quocte/QuocTe";
-import Thegioi from "./page/thegioi/Thegioi";
-import Thoisu from "./page/thoisu/Thoisu";
+import Doisong from "./doisong/Doisong";
+import Footer from "./footer/Footer"
+import Gocnhin from "./gocnhin/Gocnhin";
+import Home from "./home/Home"
+import QuocTe from "./quocte/QuocTe";
+import Thegioi from "./thegioi/Thegioi";
+import Thoisu from "./thoisu/Thoisu";
 
 function LayoutHeaderFooter(){
     return(

@@ -110,11 +110,11 @@ export default class Thegioi extends PureComponent {
         <ul className="nav nav-tabs" id="myTab" role="tablist">
           <li className="nav-item" role="presentation">
             <a className="nav-link active ml-3" id="newTab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="true">
-              Kinh Doanh</a>
+              Quốc Tế</a>
           </li>
           <li className="nav-item" role="presentation">
             <a className="nav-link" id="popularTab" data-toggle="tab" href="#Popular" role="tab" aria-controls="Popular" aria-selected="false">
-             Quốc Tế</a>
+             Thế Giới</a>
           </li>
           <li className="nav-item" role="presentation">
             <a className="nav-link" id="videoTab" data-toggle="tab" href="#Video" role="tab" aria-controls="Video" aria-selected="false">
@@ -124,11 +124,12 @@ export default class Thegioi extends PureComponent {
         <div className="thoigioitabcontent tab-content " id="myTabContent">
           {/* The Gioi */}
           <div className="tab-pane fade show active " id="new" role="tabpanel" aria-labelledby="new-tab">
-            <div>  {this.renderTheGioiDivBootStrap()}</div>
+          <div>  {this.renderTheGioiDivBootStrap()}</div>
+            
           </div>
           {/* Quoc Te */}
           <div className="tab-pane fade" id="Popular" role="tabpanel" aria-labelledby="Popular-tab">
-            <QuocTe/>
+          <QuocTe/>
 
           </div>
           {/* Goc Nhin */}

@@ -239,3 +239,260 @@
         }
     }
 }
+@media screen  and (max-width:1024px) {
+    .Footer_container {
+        padding: 20px 82px;
+        
+        .Footer_row {
+            border-bottom: 1px solid;
+            border-top: 1px solid;
+            #footer_left1 {
+                font-weight: $text-Bold;
+            }
+            .col_2_left {
+                width: 15%;
+            }
+            padding:25px 0px 0px 15px;
+            li {
+                font-size: $text-sm;
+                list-style: none;
+                line-height: 30px;
+            }
+            p {
+                font-size: $text-sm;
+                color: $c1-200;
+                img {
+                    display: inline;
+                    width: 14px;
+                }
+            }
+            .col_2_right {
+                position: relative;
+                width: 25%;
+                .footer_right_top {
+                    display: flex;
+                    width: 100%;
+                    #p2 {
+                        display: flex;
+                        margin-right: 3px;
+                        width: 100%;
+                        padding: 4px;
+                        border: 1px solid $c1-100;
+                        background-color: $c1-100;
+                        border-radius: 3px;
+                        text-align: center;
+                        align-items: center;
+                    }
+                    #p2:hover {
+                        background-color: $c1-400;
+                    }
+                    #p3 {
+                        display: flex;
+
+                        width: 100%;
+                        padding: 4px;
+                        border: 1px solid $c1-100;
+                        background-color: $c1-100;
+                        border-radius: 3px;
+                        text-align: center;
+                        align-items: center;
+                    }
+                    #p3:hover {
+                        background-color: $c1-400;
+                    }
+                    .footer_qr {
+                        position: absolute;
+                        right: 140%;
+                        top: 0;
+                        width: 422px;
+                        height: 258px;
+                        background-color: $c3-100;
+                        padding: 20px 10px;
+                        display: none;
+                        animation: fadeIn ease-in 0.5s;
+                        h5 {
+                            text-align: center;
+                            color: $c1-200;
+                            font-size: $text-md;
+                        }
+                        .footer_container_qr {
+                            margin-top: 25px;
+                            display: flex;
+                            .footer_app_left {
+                                img {
+                                    margin-left: 60px;
+                                    margin-right: 10px;
+                                    margin-bottom: 13px;
+                                    width: 133px;
+                                    height: 38px;
+                                }
+                            }
+                            .footer_qr_right {
+                                img {
+                                    margin-left: 10px;
+                                    margin-right: 60px;
+                                    width: 140px;
+                                    height: 140px;
+                                }
+                            }
+                        }
+                    }&::before{
+                        position: absolute;
+                        width: 100%;
+                        height: 200px;
+                        top: 0px;
+                        right:60% ;
+                        content: "";
+                        display: block;
+                        // background-color: #3b5999;
+    
+                    }
+                   
+                }
+                .footer_right_bot {
+                    display: flex;
+                    width: 200px;
+                    #p2 {
+                        display: flex;
+                        margin-right: 3px;
+                        width: 100%;
+                        padding: 4px;
+                        border: 1px solid $c1-100;
+                        background-color: $c1-100;
+                        border-radius: 3px;
+                        text-align: center;
+                        align-items: center;
+                    }
+                    #p2:hover {
+                        background-color: $c1-400;
+                        color: $c1-300;
+                    }
+                    #p3 {
+                        display: flex;
+                        width: 100%;
+                        padding: 4px;
+                        border: 1px solid $c1-100;
+                        background-color: $c1-100;
+                        border-radius: 3px;
+                        text-align: center;
+                        align-items: center;
+                    }
+                    #p3:hover {
+                        background-color: $c1-400;
+                        color: $c1-300;
+                    }
+                    #p4 {
+                        width: 100%;
+                        padding: 4px;
+                        border: 1px solid $c1-100;
+                        background-color: $c1-100;
+                        border-radius: 3px;
+                        text-align: center;
+                        align-items: center;
+                    }
+                    #p4:hover {
+                        background-color: $c1-400;
+                        color: $c1-300;
+                    }
+                }
+            }
+            .footer_qr_has-qr:hover .footer_qr{
+                //  những css viết trong này được áp dụng vào footer_container_qr khi footer_qr_has-qr được hover vào 
+    
+                display: block;
+            }
+        }
+        .footer_bottom_top {
+            margin: 20px 0;
+            display: flex;
+            .footer_bottom_topleft {
+                a {
+                    font-size: $text-base;
+                    color: $c1-200;
+                    text-decoration: none;
+                }
+            }
+            .footer_bottom_topright {
+                margin-left: 280px;
+                a {
+                    color: $c1-200;
+                    text-decoration: none;
+                }
+                i {
+                    font-size: $text-base;
+                    margin-left: 5px;
+                    display: inline-block;
+                    padding: 10px;
+                    border: 1 solid $c1-400;
+                    border-radius: 50%;
+                    text-align: center;
+                    align-items: center;
+                    &:hover {
+                        background-color: rgba( #31238c,  .5);
+                    }
+                }
+            }
+        }
+        .footer_bottom_bottom {
+            display: flex;
+            font-size: $text-sm;
+            color: $c1-200;
+            
+            .footer_bottom_topleft {
+                width: calc(100%/3);
+                h4 {
+                    font-size: $text-base;
+                    color: $c1-200;
+                    line-height: 15px;
+                }
+                p {
+                    font-size: $text-base;
+                    color: $c1-200;
+                    line-height: 15px;
+                }
+                margin-right: 20px;
+            }
+            .footer_bottom_botmiddle {
+                width: calc(100%/3);
+                p {
+               
+                    color: $c1-200;
+                    line-height: 20px;
+                font-size: $text-sm;
+
+                }
+                margin-right: 10px;
+            }
+            .footer_bottom_botright {
+                width: calc(100%/3);
+                line-height: 20px;
+                font-size: $text-sm;
+            }
+            .footer-active-up {
+                position: fixed;
+                right: 15px;
+                bottom: 10%;
+            }
+            
+            .footer-active-up-icon {
+                color: $c3-100;
+                padding: 13px 15px;
+                background-color: rgba( #000000, $alpha: 0.5);
+                font-size: 1rem;
+                border-radius: 50px;
+                transition: 0.5s linear;
+            }
+            
+            .footer-active-up-icon:hover {
+                color: $c1-200;
+                background-color:$c1-400;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:576px) {
+   
+}
