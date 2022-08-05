@@ -1,0 +1,20 @@
+/*-----------------
+    # thoisu
+-----------------*/
+
+.thoisu {
+    padding-left: 67px;
+    padding-right: 82px;
+    .thoisu_row {
+        padding-left: 15px;
+        h3 {
+            font-size: 20px;
+            font-weight: $text-Bold;
+        }
+        a {
+            font-size: 14px;
+            color: $c1-200;
+            text-decoration: none;
+        }
+    }
+}

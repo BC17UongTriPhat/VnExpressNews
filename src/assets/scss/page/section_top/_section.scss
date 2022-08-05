@@ -1,0 +1,57 @@
+/*-----------------
+    # section-top
+-----------------*/
+
+.section {
+    padding: 20px 67px;
+    width: 100%;
+    .section_topstory {
+        display: flex;
+        .section_topstory_leftimg {
+            display: flex;
+            width: 80%;
+            .section_topstory_leftimg-left {
+                img {
+                    width: 100%;
+                    padding-left: 15px;
+                }
+            }
+            .section_topstory_left_content {
+                background-color: $c1-100;
+                width: 60%;
+                height: 374px;
+                padding-right: 20px;
+                h3 {
+                    font-size: 20px;
+                    font-weight: $text-Bold;
+                }
+                a {
+                    font-size: 14px;
+                    color: $c1-200;
+                    text-decoration: none;
+                }
+            }
+        }
+        .section_topstory_rightimg {
+            width: 20%;
+            height: 374px;
+            background-image: url('../../../image/Vlasta-Sam-Son_Cam-Tong-the_-Anh-03-resize.jpg');
+            background-size: cover;
+            background-position: right 0;
+            height: 374px;
+            padding-left: 20px;
+        }
+    }
+    .section_bottomstory {
+        margin-top: 10px;
+        h3 {
+            font-size: 20px;
+            font-weight: $text-Bold;
+        }
+        a {
+            font-size: 14px;
+            color: $c1-200;
+            text-decoration: none;
+        }
+    }
+}
