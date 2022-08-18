@@ -36,6 +36,27 @@
         .navbar-nav {
             margin-left: 10px;
             .nav-item {
+                .nav-link{
+                    position: relative;
+                    // margin-left: 20px;
+                }
+                .nav-link::after{
+                    content: "";
+                    width: 0; // vi thẻ a là thẻ inline nên khi dù width 100% thì after là con cũng không xuất hiện
+                    // có 2 cách 1 là ép kiểu nó display :block thì nó sẽ xuất hiện
+                    // vậy thì gạch chân bên dưới nó chỉ bằng thẻ a chứ k lớn hơn được 
+                    // nên phải sử dụng kiểu 2 position: absolute;
+                    height: 3px;
+                    position: absolute; // thì nó sẽ tính hết khoảng cách thẻ a bỏ qua padding thẻ a nó sẽ chiếm luôn khoản cách thẻ a bị padding vào
+                    bottom: 0;
+                    left: 0; // nằm sát rìa trái thẻ a 
+                    background:  $c1-300;
+                    transition: all 0.3s;
+                    // vi thẻ a là thẻ inline nên khi dù
+                }
+                .nav-link:hover::after{ // re chuột vào nav-link lấy cái after ra và xét lại chiều rộng cho nó 
+                    width: 100%; // 100% cua cai the a la the cha cua no
+                }
                 a {
                     text-decoration: none;
                     color: $c1-200;
